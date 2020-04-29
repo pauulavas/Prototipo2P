@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{825D4DD4-D6EA-488E-922B-2E02AF616D57}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapaDiseno</RootNamespace>
+    <AssemblyName>CapaDiseno</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Consultas\ConsultAsignacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultAsignacion.Designer.cs">
+      <DependentUpon>ConsultAsignacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultAula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultAula.Designer.cs">
+      <DependentUpon>ConsultAula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultCarrera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultCarrera.Designer.cs">
+      <DependentUpon>ConsultCarrera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultCurso.Designer.cs">
+      <DependentUpon>ConsultCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultFacultad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultFacultad.Designer.cs">
+      <DependentUpon>ConsultFacultad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultJornada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultJornada.Designer.cs">
+      <DependentUpon>ConsultJornada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultMaestro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultMaestro.Designer.cs">
+      <DependentUpon>ConsultMaestro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultSeccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultSeccion.Designer.cs">
+      <DependentUpon>ConsultSeccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultSede.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultSede.Designer.cs">
+      <DependentUpon>ConsultSede.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\MantAulas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\MantAulas.Designer.cs">
+      <DependentUpon>MantAulas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\MantCursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\MantCursos.Designer.cs">
+      <DependentUpon>MantCursos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\MantFacultad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\MantFacultad.Designer.cs">
+      <DependentUpon>MantFacultad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\MantJornadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\MantJornadas.Designer.cs">
+      <DependentUpon>MantJornadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\MantMaestro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\MantMaestro.Designer.cs">
+      <DependentUpon>MantMaestro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\MantSeccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\MantSeccion.Designer.cs">
+      <DependentUpon>MantSeccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\MantSede.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\MantSede.Designer.cs">
+      <DependentUpon>MantSede.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent1.Designer.cs">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\AsignacionCursoCatedratico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\AsignacionCursoCatedratico.Designer.cs">
+      <DependentUpon>AsignacionCursoCatedratico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Proceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Proceso.Designer.cs">
+      <DependentUpon>Proceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Consultas\ConsultAsignacion.resx">
+      <DependentUpon>ConsultAsignacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultAula.resx">
+      <DependentUpon>ConsultAula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultCarrera.resx">
+      <DependentUpon>ConsultCarrera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultCurso.resx">
+      <DependentUpon>ConsultCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultFacultad.resx">
+      <DependentUpon>ConsultFacultad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultJornada.resx">
+      <DependentUpon>ConsultJornada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultMaestro.resx">
+      <DependentUpon>ConsultMaestro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultSeccion.resx">
+      <DependentUpon>ConsultSeccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultSede.resx">
+      <DependentUpon>ConsultSede.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\MantAulas.resx">
+      <DependentUpon>MantAulas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\MantCursos.resx">
+      <DependentUpon>MantCursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\MantFacultad.resx">
+      <DependentUpon>MantFacultad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\MantJornadas.resx">
+      <DependentUpon>MantJornadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\MantMaestro.resx">
+      <DependentUpon>MantMaestro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\MantSeccion.resx">
+      <DependentUpon>MantSeccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\MantSede.resx">
+      <DependentUpon>MantSede.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent1.resx">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\AsignacionCursoCatedratico.resx">
+      <DependentUpon>AsignacionCursoCatedratico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Proceso.resx">
+      <DependentUpon>Proceso.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CapaLogica\CapaLogica.csproj">
+      <Project>{1ab2e63c-617d-4f17-bba2-4a233700366d}</Project>
+      <Name>CapaLogica</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
