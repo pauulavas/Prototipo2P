@@ -173,5 +173,42 @@ namespace CapaLogica
         {
             return sn.consulta7(numero);
         }
+
+        //-----OCHO
+        public OdbcDataReader guardar8(string uno, string dos, string tres, string estado)
+        {
+            return sn.guardar8(uno, dos, tres, estado);
+
+        }
+
+        public OdbcDataReader modificar8(string uno, string dos,string tres, string estado)
+        {
+            return sn.modificar8(uno, dos, tres, estado);
+
+        }
+
+        public OdbcDataReader eliminar8(string uno)
+        {
+            return sn.eliminar8(uno);
+
+        }
+
+        public OdbcDataReader consulta8(string numero)
+        {
+            return sn.consulta8(numero);
+        }
+        //-----NUEVE
+        public OdbcDataReader guardar9(string uno, string dos,string tres, string cuatro, string cinco, string seis,string siete)
+        {
+            return sn.guardar9(uno, dos, tres, cuatro, cinco, seis, siete);
+
+        }
+
+
+        public OdbcDataReader consulta9(string numero)
+        {
+            return sn.consulta9(numero);
+        }
+
     }
 }

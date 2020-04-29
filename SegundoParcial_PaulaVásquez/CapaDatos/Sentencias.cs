@@ -71,7 +71,7 @@ namespace CapaDatos
             try
             {
                 cn.conexionbd();
-                string consulta = "select * from maestros;";
+                string consulta = "select * from maestros where estatus_maestro = '1';";
                 comm = new OdbcCommand(consulta, cn.conexionbd());
                 OdbcDataReader mostrar = comm.ExecuteReader();
                 return mostrar;
@@ -525,6 +525,120 @@ namespace CapaDatos
             {
                 cn.conexionbd();
                 string consulta = "select * from sedes where estatus_sede = '1';";
+                comm = new OdbcCommand(consulta, cn.conexionbd());
+                OdbcDataReader mostrar = comm.ExecuteReader();
+                return mostrar;
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine(err.Message);
+                return null;
+            }
+        }
+        //------------------------------------------------------------------------------------------------------------------------------------------------------------
+        //SIETE
+        //----------------------------------------------------INSERTAR TRES ------------------------------------------------------------------------------------------
+        public OdbcDataReader guardar8(string uno, string dos,string tres, string sestado)
+        {
+            try
+            {
+                cn.conexionbd();
+                string consulta = "insert into carreras values(" + uno + ", '" + dos + "' ,'" + tres + "' ,'" + sestado + "');";
+                comm = new OdbcCommand(consulta, cn.conexionbd());
+                OdbcDataReader mostrar = comm.ExecuteReader();
+                return mostrar;
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine(err.Message);
+                return null;
+            }
+        }
+
+        //--------------------------------------------------- MODIFICAR TRES ------------------------------------------------------------------------------------------
+        public OdbcDataReader modificar8(string uno, string dos, string tres, string sestado)
+        {
+            try
+            {
+                cn.conexionbd();
+                string consulta = "UPDATE carreras set nombre_carrera='" + dos + "',codigo_facultad='" + tres + "',estatus_carrera='" + sestado + "' where codigo_carrera='" + uno + "';";
+                comm = new OdbcCommand(consulta, cn.conexionbd());
+                OdbcDataReader mostrar = comm.ExecuteReader();
+                return mostrar;
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine(err.Message);
+                return null;
+            }
+        }
+
+        //--------------------------------------------------- ELIMINAR TRES -------------------------------------------------------------------------------------------
+        public OdbcDataReader eliminar8(string uno)
+        {
+            try
+            {
+                cn.conexionbd();
+                string consulta = "UPDATE carreras set estatus_carrera ='0' where codigo_carrera='" + uno + "';";
+                comm = new OdbcCommand(consulta, cn.conexionbd());
+                OdbcDataReader mostrar = comm.ExecuteReader();
+                return mostrar;
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine(err.Message);
+                return null;
+            }
+        }
+
+        //--------------------------------------------------- CONSULTAR TRES ------------------------------------------------------------------------------------------
+        public OdbcDataReader consulta8(string uno)
+        {
+
+
+            try
+            {
+                cn.conexionbd();
+                string consulta = "select * from carreras where estatus_carrera = '1';";
+                comm = new OdbcCommand(consulta, cn.conexionbd());
+                OdbcDataReader mostrar = comm.ExecuteReader();
+                return mostrar;
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine(err.Message);
+                return null;
+            }
+        }
+        //------------------------------------------------------------------------------------------------------------------------------------------------------------
+        //NUEVE
+        //----------------------------------------------------INSERTAR TRES ------------------------------------------------------------------------------------------
+        public OdbcDataReader guardar9(string uno, string dos,string tres, string cuatro, string cinco, string seis, string siete)
+        {
+            try
+            {
+                cn.conexionbd();
+                string consulta = "insert into asignacioncursosmastros values(" + uno + ", '" + dos + "' ,'" + tres + "','" + cuatro + "','" + cinco + "','" + seis+ "','" + siete + "');";
+                comm = new OdbcCommand(consulta, cn.conexionbd());
+                OdbcDataReader mostrar = comm.ExecuteReader();
+                return mostrar;
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine(err.Message);
+                return null;
+            }
+        }
+
+        //--------------------------------------------------- CONSULTAR TRES ------------------------------------------------------------------------------------------
+        public OdbcDataReader consulta9(string uno)
+        {
+
+
+            try
+            {
+                cn.conexionbd();
+                string consulta = "select * from asignacioncursosmastros;";
                 comm = new OdbcCommand(consulta, cn.conexionbd());
                 OdbcDataReader mostrar = comm.ExecuteReader();
                 return mostrar;

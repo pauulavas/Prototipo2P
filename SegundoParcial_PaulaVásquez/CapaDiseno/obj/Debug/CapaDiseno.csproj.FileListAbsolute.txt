@@ -40,3 +40,6 @@ C:\Users\Paula V\Documents\Universidad\Noveno Semestre\Ingenieria de Software\Se
 C:\Users\Paula V\Documents\Universidad\Noveno Semestre\Ingenieria de Software\Segundo Parcial\Progra\SegundoParcial_PaulaVásquez\CapaDiseno\obj\Debug\CapaDiseno.Mantenimientos.MantSeccion.resources
 C:\Users\Paula V\Documents\Universidad\Noveno Semestre\Ingenieria de Software\Segundo Parcial\Progra\SegundoParcial_PaulaVásquez\CapaDiseno\obj\Debug\CapaDiseno.Consultas.ConsultSede.resources
 C:\Users\Paula V\Documents\Universidad\Noveno Semestre\Ingenieria de Software\Segundo Parcial\Progra\SegundoParcial_PaulaVásquez\CapaDiseno\obj\Debug\CapaDiseno.Mantenimientos.MantSede.resources
+C:\Users\Paula V\Documents\Universidad\Noveno Semestre\Ingenieria de Software\Segundo Parcial\Progra\SegundoParcial_PaulaVásquez\CapaDiseno\obj\Debug\CapaDiseno.Consultas.ConsultCarrera.resources
+C:\Users\Paula V\Documents\Universidad\Noveno Semestre\Ingenieria de Software\Segundo Parcial\Progra\SegundoParcial_PaulaVásquez\CapaDiseno\obj\Debug\CapaDiseno.Procesos.AsignacionCursoCatedratico.resources
+C:\Users\Paula V\Documents\Universidad\Noveno Semestre\Ingenieria de Software\Segundo Parcial\Progra\SegundoParcial_PaulaVásquez\CapaDiseno\obj\Debug\CapaDiseno.Consultas.ConsultAsignacion.resources

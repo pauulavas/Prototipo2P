@@ -342,15 +342,15 @@ namespace CapaDiseno
             }
         }
         bool Proceso_Dos = false;
-        Proceso proceso_dos = new Proceso();
+        AsignacionCursoCatedratico proceso_dos = new AsignacionCursoCatedratico();
         private void dosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frmC = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is Proceso);
+            Form frmC = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is AsignacionCursoCatedratico);
             if (Proceso_Dos == false || frmC == null)
             {
                 if (frmC == null)
                 {
-                    proceso_dos = new Proceso();
+                    proceso_dos = new AsignacionCursoCatedratico();
                 }
 
                 proceso_dos.MdiParent = this;
@@ -473,6 +473,51 @@ namespace CapaDiseno
             else
             {
                 consult_7.WindowState = System.Windows.Forms.FormWindowState.Normal;
+            }
+        }
+        bool Consult_8 = false;
+        ConsultCarrera consult_8 = new ConsultCarrera();
+        private void carrerasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            Form frmC = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is ConsultCarrera);
+            if (Consult_8 == false || frmC == null)
+            {
+                if (frmC == null)
+                {
+                    consult_8 = new ConsultCarrera();
+                }
+
+                consult_8.MdiParent = this;
+                consult_8.Show();
+                Application.DoEvents();
+                Consult_8 = true;
+            }
+            else
+            {
+                consult_8.WindowState = System.Windows.Forms.FormWindowState.Normal;
+            }
+        }
+        bool Consult_9 = false;
+        ConsultAsignacion consult_9 = new ConsultAsignacion();
+        private void asignacionCursoCatedráticoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frmC = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is ConsultAsignacion);
+            if (Consult_9 == false || frmC == null)
+            {
+                if (frmC == null)
+                {
+                    consult_9 = new ConsultAsignacion();
+                }
+
+                consult_9.MdiParent = this;
+                consult_9.Show();
+                Application.DoEvents();
+                Consult_9 = true;
+            }
+            else
+            {
+                consult_9.WindowState = System.Windows.Forms.FormWindowState.Normal;
             }
         }
     }

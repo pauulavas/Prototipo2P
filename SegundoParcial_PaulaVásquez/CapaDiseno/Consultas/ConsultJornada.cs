@@ -24,7 +24,7 @@ namespace CapaDiseno.Consultas
 
         public void MostrarTabla()
         {
-            OdbcDataReader mostrar = logica.consulta2("1");
+            OdbcDataReader mostrar = logica.consulta5("1");
             try
             {
                 while (mostrar.Read())

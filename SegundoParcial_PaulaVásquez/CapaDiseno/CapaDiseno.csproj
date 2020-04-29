@@ -43,11 +43,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Consultas\ConsultAsignacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultAsignacion.Designer.cs">
+      <DependentUpon>ConsultAsignacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Consultas\ConsultAula.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Consultas\ConsultAula.Designer.cs">
       <DependentUpon>ConsultAula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultCarrera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultCarrera.Designer.cs">
+      <DependentUpon>ConsultCarrera.cs</DependentUpon>
     </Compile>
     <Compile Include="Consultas\ConsultCurso.cs">
       <SubType>Form</SubType>
@@ -91,12 +103,6 @@
     <Compile Include="Mantenimientos\MantAulas.Designer.cs">
       <DependentUpon>MantAulas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mantenimientos\MantCarrera.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Mantenimientos\MantCarrera.Designer.cs">
-      <DependentUpon>MantCarrera.cs</DependentUpon>
-    </Compile>
     <Compile Include="Mantenimientos\MantCursos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +145,12 @@
     <Compile Include="MDIParent1.Designer.cs">
       <DependentUpon>MDIParent1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\AsignacionCursoCatedratico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\AsignacionCursoCatedratico.Designer.cs">
+      <DependentUpon>AsignacionCursoCatedratico.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procesos\Proceso.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,8 +160,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Consultas\ConsultAsignacion.resx">
+      <DependentUpon>ConsultAsignacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Consultas\ConsultAula.resx">
       <DependentUpon>ConsultAula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultCarrera.resx">
+      <DependentUpon>ConsultCarrera.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas\ConsultCurso.resx">
       <DependentUpon>ConsultCurso.cs</DependentUpon>
@@ -192,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MDIParent1.resx">
       <DependentUpon>MDIParent1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\AsignacionCursoCatedratico.resx">
+      <DependentUpon>AsignacionCursoCatedratico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\Proceso.resx">
       <DependentUpon>Proceso.cs</DependentUpon>
